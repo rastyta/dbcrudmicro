@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: demomicro
+    name: dbcrudmicro
   cloud:
     kubernetes:
       reload:
