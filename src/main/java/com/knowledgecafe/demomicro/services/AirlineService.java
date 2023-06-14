@@ -23,8 +23,6 @@ public class AirlineService {
         Iterable airlineIterable = airlineRepository.findAll();
         List airlines = new ArrayList();
         airlineIterable.forEach(airlines::add);
-//        Airline test =(Airline) airlines.get(0);
-//        System.out.println("************************ "+test.getName());
         return airlines;
     }
 
