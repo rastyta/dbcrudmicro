@@ -15,7 +15,7 @@ public class CouchbaseConf extends AbstractCouchbaseConfiguration {
     private String username;
     @Value("${db.couchbase.password}")
     private String password;
-    @Value("${db.couchbase.ip}")
+    @Value("${couchbaseip.value}")
     private String ip;
 
     @Override
