@@ -2,13 +2,17 @@ server:
   port: 8081
 spring:
   application:
-    name: dbcrudmicro
+    name: demomicro
   cloud:
     kubernetes:
       reload:
         enabled: true
+        monitoring-config-maps: true
+        strategy: refresh
+        mode: event
       config:
         enabled: true
+        name: dbcrudmicro
 db:
   couchbase:
     username: ${CB_USERNAME}
