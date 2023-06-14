@@ -21,13 +21,11 @@ public class CouchbaseConf extends AbstractCouchbaseConfiguration {
 
     @Override
     public String getUserName() {
-        System.out.println("*****************************" + username);
         return username;
     }
 
     @Override
     public String getPassword() {
-        System.out.println("*****************************" + password);
         return password;
     }
 
